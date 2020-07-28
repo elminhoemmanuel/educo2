@@ -2,13 +2,18 @@
 
 $(document).ready(function(){
 
-    $(".drop-link").click(function(){
-        $(".nav-sm-dropdown").toggle();
-    });
+    // for responsiv navbar
+    function openNav() {
+        $("#mySidenav").css("width","100%");
+    }
+      
+    function closeNav() {
+        $("#mySidenav").css("width","0")
+    }
 
-    $(".cancel").click(function(){
-        $(this).hide();
-    })
+    $(".dropper").click(openNav);
+    $(".closenav").click(closeNav);
+    $(".closers").click(closeNav);
     
 
     var navLarge = $('.nav-lg'); 

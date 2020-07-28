@@ -217,9 +217,7 @@ body{
     display: none;
 }
 
-.nav-sm-dropdown{
-    display: none;
-}
+
 
 
 
@@ -230,6 +228,13 @@ nav{
 }
 
 /* services section */
+section{
+    border-top: 80px solid transparent;
+    margin-top: -80px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
 
 .intro-text{
     padding: 4% 5% 3% 5%;
@@ -533,12 +538,16 @@ footer .uil{
     }
 
     .nav-sm-dropdown{
-        position: absolute;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 60;
         top: 0;
         left: 0;
-        background-color:#1ca803;
-        width: 100%;
-        z-index: 40;
+        background-color: #1ca803;
+        overflow-x: hidden !important;
+        transition: 0.7s;
+            
     }
 
     .nav-sm-dropdown a{
@@ -560,7 +569,7 @@ footer .uil{
 
     .cancel{
         text-align: right;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .dropper{
@@ -601,6 +610,10 @@ footer .uil{
         width: 5%;
         height: 15%;
         background-color: #1ca803;
+    }
+    .closeicon{
+        font-size: 3rem;
+        margin-left: 78%;
     }
 
 
@@ -661,6 +674,9 @@ footer .uil{
         top: 90%;
     }
 
+    .closeicon{
+        margin-left: 70%;
+    }
 }
 
 @media  only screen and (max-width:320px){

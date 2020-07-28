@@ -36,21 +36,15 @@
     <body class="body">
 
         <!-- Small navbar -->
-        <div class="nav-sm-dropdown" id="sidenav">
-            <a href=""   class="cancel"><i class="uil uil-times"></i></a>
-            <a href="#home">Home</a>
-            <a href="#home">About</a>
-            <a href="#home">Get Tutor</a>
-            
-            <a href="#home" class="dropdown-toggle " role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recruitment
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Education Employer</a>
-                    <a class="dropdown-item" href="#">Job Seeker</a>
-                </div>
-            </a>
-            <a href="#home">Consulting</a>
-            <a href="#home">Blog</a>
-            <a href="#home">Contact</a>
+        <div class="nav-sm-dropdown" id="mySidenav">
+            <div class="nav-holder closenav"><a href="#home" class=""><i class="uil uil-times closeicon"></i></a></div>
+            <div class="nav-holder homes"><a class="closers" href="#home">Home</a></div>
+            <div class="nav-holder"><a class="closers" href="#about">About</a></div>
+            <div class="nav-holder"><a class="closers" href="#about">Get Tutor</a></div>
+            <div class="nav-holder"><a class="closers" href="#about">Recruitment</a></div>
+            <div class="nav-holder"><a class="closers" href="#home">Consulting</a></div>
+            <div class="nav-holder"><a class="closers" href="#blog">Blog</a></div>
+            <div class="nav-holder"><a class="closers" href="#contact">Contact</a></div> 
         </div>
         
         <header id="header" class="">
@@ -59,18 +53,12 @@
                     <div class="nav-lg">
                         <div class="brand-holder"><a href="#home"><img class="logo" src="images/edulogo.PNG" alt="logo"></a></div>
                         <div class="nav-holder home"><a  class="animated" href="#home">Home</a></div>
-                        <div class="nav-holder"><a class="animated" href="#home">About</a></div>
-                        <div class="nav-holder"><p><a class="animated" href="#home">Get&nbspTutor</a></p></div>
-                        <div class="nav-holder dropdown">
-                            <a href="#home" class="dropdown-toggle animated" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recruitment</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Education Employer</a>
-                                <a class="dropdown-item" href="#">Job Seeker</a>
-                            </div>
-                        </div>
-                        <div class="nav-holder"><a class="animated" href="#home">Consulting</a></div>
-                        <div class="nav-holder"><a class="animated" href="#home">Blog</a></div>
-                        <div class="nav-holder " id="last"><a class="animated" href="#home">Contact</a></div>
+                        <div class="nav-holder"><a class="animated" href="#about">About</a></div>
+                        <div class="nav-holder"><p><a class="animated" href="#about">Get&nbspTutor</a></p></div>
+                        <div class="nav-holder"><p><a class="animated" href="#about">Recruitment</a></p></div>
+                        <div class="nav-holder"><a class="animated" href="#consult">Consulting</a></div>
+                        <div class="nav-holder"><a class="animated" href="#blog">Blog</a></div>
+                        <div class="nav-holder " id="last"><a class="animated" href="#contact">Contact</a></div>
                     </div>
 
                     <div class="nav-sm">
@@ -121,7 +109,7 @@
         </header>
 
         <main>
-            <section class="services colored-section" id="services">
+            <section class="services colored-section" id="about">
                 <div class="intro-text targeted">
                     <h1 id="intro">What do we do?</h1>
                     <p id="bar"><img src="images/bar2.png" alt="bar" class="bar"></p>
@@ -309,7 +297,7 @@
                   
             </section>
 
-            <section class="cta-section">
+            <section class="cta-section" id="contact">
 
                 <div class="intro-text cta-header">
                     <h1 id="intro">Educational Services All at Your Fingertips, Why the Wait?</h1>
@@ -321,7 +309,7 @@
                 
             </section>
 
-            <section class="services colored-section blog">
+            <section class="services colored-section blog" id="blog">
                 <div class="intro-text">
                     <h1 id="intro">See what’s happening in our blog.</h1>
                     <p id="bar"><img src="images/bar2.png" alt="bar" class="bar"></p>
